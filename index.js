@@ -39,11 +39,6 @@ app.post('/whatsapp', (req, res) => {
     res.send('<Response></Response>');
 });
 
-// app.get('/status-callback', (req, res) => {
-//     // Handle status callback here if needed
-//     res.send('Status callback received');
-// });
-
 app.get('/send-survey', (req, res) => {
     const surveyMessage = `Thanks for shopping with us! On a scale of 1 to 10, how likely are you to recommend us to others?\n\n9 or 10 - Very Likely 😊\n7 or 8 - Likely 😐\n1 to 6 - Unlikely 😞\n\nReply with your rating.`;
   let {to} = req.query
